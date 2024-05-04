@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Adding transitions for smooth effects */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgb(105, 105, 218), #e073a0); /* Vibrant gradient background */
+    font-family: 'Roboto', sans-serif;
+}
+
+section.chat__section {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Enhanced box shadow */
+    border-radius: 12px; /* Rounded corners for the chat section */
+    margin: 20px; /* Added margin for better spacing */
+}
+
+.brand {
+    padding: 20px;
+    background: #ff8ba6; /* Light pink background color */
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 12px; /* Rounded top left corner */
+    border-top-right-radius: 12px; /* Rounded top right corner */
+}
+
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 24px; /* Increased font size for the brand */
+    color: #fff; /* White text color */
+    margin-left: 20px; /* Increased margin for better spacing */
+}
+
+.message__area {
+    height: 400px; /* Reduced height for better proportion */
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 20px; /* Adjusted padding for better alignment */
+}
+
+textarea {
+    width: calc(100% - 40px); /* Adjusted width to account for padding */
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #f7f7f7; /* Light gray background color */
+    border-radius: 8px; /* Rounded corners for the textarea */
+    margin: 20px; /* Added margin for better spacing */
+}
+
+.message {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Reduced margin between messages */
+    max-width: 300px;
+    position: relative;
+    word-wrap: break-word; /* Enable word wrapping for long messages */
+}
+
+.incoming {
+    background: #82cfff; /* Light blue background color */
+    color: #fff; /* White text color */
+}
+
+.outgoing {
+    background: #ffd6f6; /* Light purple background color */
+    color: #787986; /* Dark gray text color */
+    margin-left: auto;
+}
+
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 20px; /* Adjusted left position for better alignment */
+    color: #333;
+    font-size: 14px;
+}
